@@ -1,0 +1,38 @@
+{
+  "name": "tv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "client": "cd client && npm run start",
+    "start": "node ./server",
+    "server": "nodemon ./server",
+    "build": "cd client && npm run build",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YousefQwasmeh/tv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YousefQwasmeh/tv/issues"
+  },
+  "homepage": "https://github.com/YousefQwasmeh/tv#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "axios": "^0.19.0",
+    "env2": "^2.2.2",
+    "nodemon": "^1.19.1",
+    "pg": "^7.12.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0"
+  },
+  "proxy": "http://localhost:4000"
+}
