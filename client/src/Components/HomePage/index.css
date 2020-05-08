@@ -4,6 +4,7 @@
 .url-a {
   width: 50%;
   float: left;
+  height: 50vh;
 }
 .constener {
   /* display: flex; */
@@ -14,4 +15,12 @@ img {
 }
 .loading-img {
   height: 70vh;
+}
+body {
+  background-color: #f2f2f2;
+}
+
+.add-link-a {
+  width: 100%;
+  display: flex;
 }
