@@ -1,6 +1,6 @@
 const dbConnection = require("./../db_connection");
 
-const addLink = (name, img, description, url) => {
+const addLink = ({ name, img, description, url }) => {
   return dbConnection
     .query(
       "insert into link (name, img, description,url) values ($1,$2,$3,$4)",
