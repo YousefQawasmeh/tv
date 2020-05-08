@@ -42,9 +42,11 @@ class HomePage extends React.Component {
         <br />
         <br />
         <br />
-        <a href='/add-link'>
+        {/* <p width='100%'> */}
+        <a className="add-link-a" href='/add-link'>
           <h2>اضافة رابط جديد</h2>
         </a>
+        {/* </p> */}
       </div>
     );
   }
